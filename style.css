@@ -294,7 +294,40 @@ section h3 {
 .map-container iframe {
     border: none !important;
 }
+/* --- Styling untuk Peta Statis dan Tombol Link --- */
 
+/* Pengaturan Gambar Peta Statis */
+.map-container .map-image-preview {
+    width: 100%;
+    height: 450px; /* Tinggi gambar tetap 450px */
+    display: block; 
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa terdistorsi */
+    border-radius: 8px; /* Memberi sudut melengkung pada gambar */
+    border: 1px solid #ddd;
+    margin-bottom: 20px; /* Jarak antara gambar dan tombol */
+}
+
+/* Styling untuk Tombol CTA Peta */
+.map-cta-button {
+    /* Gaya Tombol */
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-whatsapp); /* Gunakan warna hijau WhatsApp atau warna utama Anda */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.map-cta-button:hover {
+    background-color: #128C7E; /* Warna hover yang lebih gelap */
+}
+.map-container .map-image-preview {
+    /* ... properti lainnya ... */
+    margin-bottom: 0; /* Pastikan tidak ada margin-bottom di sini jika tombol ditaruh di luar */
+}
 /* --- QUICK CONTACT BUTTON --- */
 .contact-quick-access {
     text-align: center;
